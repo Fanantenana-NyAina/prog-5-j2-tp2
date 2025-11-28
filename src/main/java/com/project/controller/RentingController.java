@@ -22,7 +22,7 @@ public class RentingController {
     }
 
     @PostMapping("/rent")
-    public String rent(@RequestBody RentRequest rentRequest){
-        throw new NotImplementedException("not implemented yet");
+    public Boolean rent(@RequestBody RentRequest rentRequest){
+        return rentingManager.rent(rentRequest.getRenter(), rentRequest.getRentItem());
     }
 }
