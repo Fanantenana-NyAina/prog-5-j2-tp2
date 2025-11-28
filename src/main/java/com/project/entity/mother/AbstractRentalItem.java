@@ -14,6 +14,11 @@ public abstract class AbstractRentalItem implements RentalItem {
     }
 
     @Override
+    public Boolean getIsRent() {
+        return isRented;
+    }
+
+    @Override
     public Double getPrice() {
         return this.price;
     }
@@ -25,5 +30,9 @@ public abstract class AbstractRentalItem implements RentalItem {
                         + "\nDescription :"+this.RentalItemDescription
                         + "\nAvalaible : " + isRented
         );
+    }
+
+    public void setRented(Boolean rented) {
+        isRented = rented;
     }
 }

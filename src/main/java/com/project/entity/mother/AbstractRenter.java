@@ -8,5 +8,13 @@ public abstract class AbstractRenter implements Renter {
     }
 
     @Override
-    public abstract Boolean rent(RentalItem rentalItem);
+    public Boolean rent(RentalItem rentalItem) {
+        if(rentalItem.getIsRent())
+            return false;
+
+        if (rentalItem instanceof AbstractRentalItem)
+            ((AbstractRentalItem) rentalItem).setRented(true);
+
+        return true;
+    }
 }
