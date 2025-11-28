@@ -2,7 +2,6 @@ package com.project.controller;
 
 import com.project.controller.dto.RentRequest;
 import com.project.manager.RentingManager;
-import org.apache.commons.lang3.NotImplementedException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
