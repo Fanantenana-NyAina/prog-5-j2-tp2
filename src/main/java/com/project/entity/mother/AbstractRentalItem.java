@@ -22,9 +22,8 @@ public abstract class AbstractRentalItem implements RentalItem {
     public String getDetails() {
         return (
                 this.RentalItemName
-                        + " - "
-                        + this.RentalItemDescription
-                        + " | avalaible : " + isRented
+                        + "\nDescription :"+this.RentalItemDescription
+                        + "\nAvalaible : " + isRented
         );
     }
 }
