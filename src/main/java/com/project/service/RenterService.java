@@ -5,7 +5,7 @@ import com.project.entity.mother.Renter;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RentingService {
+public class RenterService {
     public Boolean rentItem(Renter renter, RentalItem item){
         return renter.rent(item);
     }

@@ -1,11 +1,10 @@
 package com.project.controller;
 
 import com.project.controller.dto.RentRequest;
+import com.project.entity.mother.RentalItem;
 import com.project.manager.RentingManager;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.apache.commons.lang3.NotImplementedException;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class RentingController {
@@ -23,5 +22,15 @@ public class RentingController {
     @PostMapping("/rent")
     public Boolean rent(@RequestBody RentRequest rentRequest){
         return rentingManager.rent(rentRequest.getRenter(), rentRequest.getRentItem());
+    }
+
+    @GetMapping("/rentalItem/details")
+    public String rentalItemDetails(@RequestParam("item") RentalItem item){
+        throw new NotImplementedException("not implemented yet");
+    }
+
+    @GetMapping("/rentalItem/details")
+    public String rentalItemPrice(@RequestParam("item") RentalItem item){
+        throw new NotImplementedException("not implemented yet");
     }
 }
