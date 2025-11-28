@@ -8,7 +8,5 @@ public abstract class AbstractRenter implements Renter {
     }
 
     @Override
-    public Boolean rent(RentalItem rentalItem) {
-        return null;
-    }
+    public abstract Boolean rent(RentalItem rentalItem);
 }
