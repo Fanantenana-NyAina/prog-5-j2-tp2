@@ -2,14 +2,14 @@ package com.project.entity.mother;
 
 public abstract class AbstractRentalItem implements RentalItem {
     private Double price;
-    private String RentalItemName;
-    private String RentalItemDescription;
+    private String rentalItemName;
+    private String rentalItemDescription;
     private Boolean isRented;
 
     public AbstractRentalItem(Double price, String rentalItemName, String rentalItemDescription) {
         this.price = price;
-        this.RentalItemName = rentalItemName;
-        this.RentalItemDescription = rentalItemDescription;
+        this.rentalItemName = rentalItemName;
+        this.rentalItemDescription = rentalItemDescription;
         this.isRented = false;
     }
 
@@ -26,8 +26,8 @@ public abstract class AbstractRentalItem implements RentalItem {
     @Override
     public String getDetails() {
         return (
-                this.RentalItemName
-                        + "\nDescription :"+this.RentalItemDescription
+                this.rentalItemName
+                        + "\nDescription :"+this.rentalItemDescription
                         + "\nAvalaible : " + isRented
         );
     }

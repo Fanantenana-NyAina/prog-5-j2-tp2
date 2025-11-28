@@ -62,18 +62,11 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${checkstyle-maven-plugin.version}</version>
                 <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
+                    <configLocation>config/checkstyle/checkstyle.xml</configLocation>
                     <logViolationsToConsole>true</logViolationsToConsole>
                     <includeTestSourceDirectory>true</includeTestSourceDirectory>
                 </configuration>
 
-                <dependencies>
-                    <dependency>
-                        <groupId>${project.groupId}</groupId>
-                        <artifactId>${project.artifactId}</artifactId>
-                        <version>${project.version}</version>
-                    </dependency>
-                </dependencies>
                 <executions>
                     <execution>
                         <phase>verify</phase>
