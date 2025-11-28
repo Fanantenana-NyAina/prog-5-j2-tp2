@@ -24,7 +24,6 @@ public abstract class AbstractRentalItem implements RentalItem {
                 this.RentalItemName
                         + " - "
                         + this.RentalItemDescription
-                        + " | Price: " + price
                         + " | avalaible : " + isRented
         );
     }
