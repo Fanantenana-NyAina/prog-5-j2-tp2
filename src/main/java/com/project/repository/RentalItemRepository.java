@@ -1,12 +1,12 @@
 package com.project.repository;
 
 import com.project.entity.mother.RentalItem;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+@Repository
 public class RentalItemRepository {
     private final Map<String, RentalItem> stock = new HashMap<>();
 
