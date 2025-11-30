@@ -17,4 +17,9 @@ public abstract class AbstractRenter implements Renter {
 
         return true;
     }
+
+    @Override
+    public String renterName() {
+        return this.renterName;
+    }
 }
