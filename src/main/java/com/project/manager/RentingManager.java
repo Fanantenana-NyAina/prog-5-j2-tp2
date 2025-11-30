@@ -24,7 +24,7 @@ public class RentingManager {
         return rentalItemService.getRentalItemDetails(rentalItemName);
     }
 
-    public Double getRentalItemPrice(RentalItem item){
-        return rentalItemService.rentalItemPrice(item);
+    public Double getRentalItemPrice(String rentalItemName){
+        return rentalItemService.rentalItemPrice(rentalItemName);
     }
 }

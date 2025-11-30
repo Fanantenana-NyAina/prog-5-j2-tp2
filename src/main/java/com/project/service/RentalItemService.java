@@ -1,6 +1,5 @@
 package com.project.service;
 
-import com.project.entity.mother.RentalItem;
 import com.project.repository.RentalItemRepository;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +17,9 @@ public class RentalItemService {
         return item.getDetails();
     }
 
-    public Double rentalItemPrice(RentalItem rentalItem){
-        return rentalItem.getPrice();
+    public Double rentalItemPrice(String rentalItemName){
+        var item =  rentalItemRepository.findByName(rentalItemName);
+
+        return item.getPrice();
     }
 }

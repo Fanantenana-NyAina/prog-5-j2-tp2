@@ -2,7 +2,6 @@ package com.project.controller;
 
 import com.project.controller.dto.RentRequest;
 import com.project.manager.RentingManager;
-import org.apache.commons.lang3.NotImplementedException;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -29,7 +28,7 @@ public class RentingController {
     }
 
     @GetMapping("/rentalItem/price")
-    public Double rentalItemPrice(@RequestParam("item") String itemName){
-        throw new NotImplementedException("not implemented yet");
+    public Double rentalItemPrice(@RequestParam("itemName") String itemName){
+        return rentingManager.getRentalItemPrice(itemName);
     }
 }
