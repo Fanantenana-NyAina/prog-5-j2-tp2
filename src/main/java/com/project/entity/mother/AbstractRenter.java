@@ -1,7 +1,7 @@
 package com.project.entity.mother;
 
 public abstract class AbstractRenter implements Renter {
-    private String renterName;
+    private final String renterName;
 
     public AbstractRenter(String renterName) {
         this.renterName = renterName;
