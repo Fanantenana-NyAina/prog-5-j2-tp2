@@ -1,9 +1,9 @@
 package com.project.entity.mother;
 
 public abstract class AbstractRentalItem implements RentalItem {
-    private Double price;
-    private String rentalItemName;
-    private String rentalItemDescription;
+    private final Double price;
+    private final String rentalItemName;
+    private final String rentalItemDescription;
     private Boolean isRented;
 
     public AbstractRentalItem(Double price, String rentalItemName, String rentalItemDescription) {
