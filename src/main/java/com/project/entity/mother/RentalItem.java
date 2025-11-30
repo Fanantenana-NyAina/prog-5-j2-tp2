@@ -4,4 +4,5 @@ public interface RentalItem {
     String getDetails();
     Double getPrice();
     Boolean getIsRent();
+    String getName();
 }

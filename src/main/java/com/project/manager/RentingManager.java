@@ -20,8 +20,8 @@ public class RentingManager {
         return rentingService.rentItem(renter, item);
     }
 
-    public String getRentalItemDetails(RentalItem item){
-        return rentalItemService.getRentalItemDetails(item);
+    public String getRentalItemDetails(String rentalItemName){
+        return rentalItemService.getRentalItemDetails(rentalItemName);
     }
 
     public Double getRentalItemPrice(RentalItem item){

@@ -24,12 +24,12 @@ public class RentingController {
     }
 
     @GetMapping("/rentalItem/details")
-    public String rentalItemDetails(@RequestParam("itemName") String rentalItemName){
-        throw new NotImplementedException("not implemented yet");
+    public String rentalItemDetails(@RequestParam("itemName") String itemName){
+        return rentingManager.getRentalItemDetails(itemName);
     }
 
     @GetMapping("/rentalItem/price")
-    public Double rentalItemPrice(@RequestParam("item") String rentalItemName){
+    public Double rentalItemPrice(@RequestParam("item") String itemName){
         throw new NotImplementedException("not implemented yet");
     }
 }

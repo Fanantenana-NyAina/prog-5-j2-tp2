@@ -14,6 +14,11 @@ public abstract class AbstractRentalItem implements RentalItem {
     }
 
     @Override
+    public String getName() {
+        return this.rentalItemName;
+    }
+
+    @Override
     public Boolean getIsRent() {
         return isRented;
     }
