@@ -1,7 +1,6 @@
 package com.project.controller;
 
 import com.project.controller.dto.RentRequest;
-import com.project.entity.mother.RentalItem;
 import com.project.manager.RentingManager;
 import org.apache.commons.lang3.NotImplementedException;
 import org.springframework.web.bind.annotation.*;
